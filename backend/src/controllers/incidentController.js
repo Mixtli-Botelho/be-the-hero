@@ -8,8 +8,8 @@ module.exports = {
 
         const incidents = await connectionDB('incidents')
             .join('ongs', 'ongs.id', '=', 'incidents.ong_id') // Relaciona dados de duas tabelas
-            .limit(5) // Limita o número de incidents na pagina
-            .offset((page -1) * 5) // Vai pulando os registro de acordo com a paginação
+            // .limit(5) // Limita o número de incidents na pagina
+            // .offset((page -1) * 5) // Vai pulando os registro de acordo com a paginação
             .select(
                 [
                     'incidents.*',
