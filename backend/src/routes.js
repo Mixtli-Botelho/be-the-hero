@@ -1,7 +1,7 @@
 const express = require('express') // Importa o micro frame work "Express"
 const ongController = require('./controllers/ongController.js')
 const incidentController = require('./controllers/incidentController.js')
-const profileController = require('./controllers/incidentController.js')
+const profileController = require('./controllers/profileController.js')
 const sessionController = require('./controllers/sessionController.js')
 
 const routes = express.Router() // Método Router() pega o módulo de Rotas do Express
